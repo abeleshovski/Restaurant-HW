@@ -1,0 +1,155 @@
+body{
+    font-family: 'Times New Roman',Georgia,  Times, serif;
+}
+
+.flexbox{
+    display: flexbox;
+    margin: 0 80px 80px 80px;
+    transition: 0.1s;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 60%;
+    margin: 10px;
+    font-size: large;
+}
+
+button{
+    display: block;
+    width: 20%;
+    border: none;
+    height: 40px;
+}
+
+.navbar{
+    justify-content: center;
+    transition: 0.1s ease-in;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.navbar > h2{
+    display: inline-block;
+}
+
+.navbar > nav{
+    display: inline-block;
+    float: right;
+    color: white;
+}
+
+.navbar > h2{
+    text-shadow: 1px 1px black;
+}
+
+li{
+    display: inline;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: larger;
+    justify-content: center;
+    transition: 0.1s ease-in;
+    text-shadow: 1px 1px black;
+}
+
+a:hover{
+    font-size: xx-large;
+    transition: 0.1s;
+}
+
+.burgerimg{
+    width: 100%;
+    overflow: hidden;
+    height: 700px;
+    border-radius: 5%;
+    background-image: url('burger.jpg');
+    background-repeat: no-repeat;
+}
+
+.about{
+    width: 70%;
+    align-content: center;
+    padding: 5px;
+    position: relative;
+    left: 200px;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 2%;
+}
+
+.about > img{
+    width: 40%;
+    float: left;
+    margin: 50px;
+    border-radius: 5%;
+    
+}
+
+.about > .card > p{
+    margin-top: 100px;
+}
+
+p{
+    color: grey;
+}
+
+.card > p:first-of-type{
+    color: black;
+}
+
+.menu{
+    width: 68%;
+    align-content: center;
+    padding: 20px;
+    position: relative;
+    left: 200px;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 2%;
+}
+
+.menuimg > img{
+    width: 300px;
+    float: right;
+    border-radius: 5%;
+
+}
+
+.contact{
+    width: 68%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    border-radius: 2%;
+}
+
+.contact > p{
+    color: black;
+}
+
+.contact > h4{
+    color: cadetblue;
+    font-weight: bolder;
+}
+
+footer{
+    bottom: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flexbox;
+    flex-wrap: wrap;
+    color: grey;
+}
+
+.flexbox > .burgerimg > h1{
+    top: 200px;
+    text-align: center;
+    color: white;
+    position: relative;
+    text-shadow: 1px 1px black;
+}
