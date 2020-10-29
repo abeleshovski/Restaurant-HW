@@ -1,11 +1,17 @@
 body{
     font-family: 'Times New Roman',Georgia,  Times, serif;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
 
 .flexbox{
     display: flexbox;
     margin: 0 80px 80px 80px;
     transition: 0.1s;
+
 }
 
 input{
@@ -14,6 +20,7 @@ input{
     width: 60%;
     margin: 10px;
     font-size: large;
+
 }
 
 button{
@@ -21,6 +28,7 @@ button{
     width: 20%;
     border: none;
     height: 40px;
+
 }
 
 .navbar{
@@ -28,10 +36,16 @@ button{
     transition: 0.1s ease-in;
     color: white;
     text-shadow: 1px 1px black;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
 }
 
 .navbar > h2{
     display: inline-block;
+    margin-left: 20px;
 }
 
 .navbar > nav{
@@ -56,6 +70,8 @@ a{
     justify-content: center;
     transition: 0.1s ease-in;
     text-shadow: 1px 1px black;
+
+
 }
 
 a:hover{
@@ -81,6 +97,11 @@ a:hover{
     display: inline-block;
     border: 1px solid grey;
     border-radius: 2%;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
 }
 
 .about > img{
@@ -97,6 +118,7 @@ a:hover{
 
 p{
     color: grey;
+
 }
 
 .card > p:first-of-type{
@@ -112,6 +134,11 @@ p{
     display: inline-block;
     border: 1px solid grey;
     border-radius: 2%;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+     -ms-animation: fadein 4s; /* Internet Explorer */
+      -o-animation: fadein 4s; /* Opera < 12.1 */
+         animation: fadein 4s;
 }
 
 .menuimg > img{
@@ -122,10 +149,15 @@ p{
 }
 
 .contact{
-    width: 68%;
+    width: 70%;
     margin: 0 auto;
     border: 1px solid grey;
     border-radius: 2%;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+     -ms-animation: fadein 4s; /* Internet Explorer */
+      -o-animation: fadein 4s; /* Opera < 12.1 */
+         animation: fadein 4s;
 }
 
 .contact > p{
@@ -152,4 +184,29 @@ footer{
     color: white;
     position: relative;
     text-shadow: 1px 1px black;
+}
+
+@keyframes fadein{
+    from{ opacity: 0;}
+    to{opacity: 1;}
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
